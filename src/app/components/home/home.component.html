@@ -1,0 +1,17 @@
+<p>Im parent </p>
+
+
+<!-- From parent to child  -->
+<app-child [childvariable]="parentvariable"  (EventCTC)="getColorFromChild($event)"></app-child>
+
+<!-- From child to parent  -->
+<app-child2  [colorFromChild1]="childColor" (myEvent)="getData($event)"   ></app-child2> <!--bind event 'subScrip'-->
+
+<p>Send data from Child To Parent using onInit :: {{getChildData}}</p>
+
+
+
+
+<div class="bg-warning text-center p-3 m-3 ">
+    im parent and  child1 data is :: {{childColor}}
+</div>

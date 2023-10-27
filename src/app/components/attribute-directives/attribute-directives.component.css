@@ -1,0 +1,11 @@
+.Custombg{
+    background-color: black;
+    color: darkgray;
+    font-size: 20;
+}
+
+.Redbg{
+    background-color: rgb(124, 0, 0);
+    color: darkgray;
+    font-size: 20; 
+}

@@ -1,0 +1,12 @@
+<p>component-life-cycle works!</p>
+
+
+<p>
+    Input Data Value = {{inData}}<br>
+    Input Previous Value = {{lastpreviousValue}}<br>
+    Input First Change = {{firstChange}}
+</p>
+
+
+<h2>Changes History</h2>
+<p *ngFor="let change of mychanges; let i = index">{{i}}:{{change}}</p>
